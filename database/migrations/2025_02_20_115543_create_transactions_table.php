@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('transaction_code')->unique();
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->foreignId('customer_id')->constrained('customers')->onDelete('cascade');
-            $table->timestamp('transaction_time')->useCurrent();
+            $table->dateTime('transaction_time')->useCurrent();
             $table->enum('status', ['0', '1', '2', '3'])->default('0');
             $table->enum('payment_status', ['0', '1'])->default('0');
             $table->timestamps();
