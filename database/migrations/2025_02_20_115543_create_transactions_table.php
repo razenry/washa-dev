@@ -19,7 +19,7 @@ return new class extends Migration
             $table->timestamp('transaction_time')->useCurrent();
             $table->enum('status', ['0', '1', '2', '3'])->default('0');
             $table->enum('payment_status', ['0', '1'])->default('0');
-            $table->timestamps();;
+            $table->timestamps();
         });
     }
     /**
