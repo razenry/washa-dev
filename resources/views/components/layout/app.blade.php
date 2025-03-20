@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Washa</title>
+    <title>{{ $title ?? 'Washa' }}</title>
 
     {{-- Icon --}}
     <link rel="icon" href="{{ asset('logo.png') }}" type="image/x-icon" />

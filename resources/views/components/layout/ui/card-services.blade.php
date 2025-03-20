@@ -1,8 +1,13 @@
-<div class="flex flex-col justify-between p-6 max-h-[450px] text-center text-gray-400 bg-gray-800 rounded-lg border border-gray-700 shadow-xl xl:p-8 dark:border-gray-600">
+<div
+    class="flex flex-col justify-between p-6 max-h-[450px] text-center text-gray-400 bg-gray-800 rounded-lg border border-gray-700 shadow-xl xl:p-8 dark:border-gray-600
+    transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:border-blue-500"
+    data-aos="fade-up" data-aos-duration="500">
+
     <div>
         <h3 class="mb-4 text-2xl font-semibold text-white">{{ $title }}</h3>
         <p class="font-light sm:text-lg">{{ $description }}</p>
     </div>
+
     <div>
         <div class="flex justify-center items-baseline my-8">
             <span class="mr-2 text-5xl font-extrabold text-white">{{ $price }}</span>
@@ -19,7 +24,11 @@
             @endforeach
         </ul>
     </div>
-    <a href="{{ $link }}" class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 dark:focus:ring-blue-900">
-        Book Now
-    </a>
+
+    <div class="">
+        <a href="{{ $link }}"
+            class="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 dark:focus:ring-blue-900">
+            Book Now
+        </a>
+    </div>
 </div>
